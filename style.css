@@ -1,0 +1,245 @@
+
+/* GENERALI */
+
+body{
+    background-color: rgb(12, 80, 100);
+    font-family: Arial, Helvetica, sans-serif;
+    user-select: none;
+}
+
+.container-fluid{
+    margin-top: 5em;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+}
+h1{
+    color: white;
+    text-align: center;
+    font-size: 3em;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+
+/* TABELLONE */
+
+#tabellone{
+    width: 70%;
+    margin: 1em auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+/* celle tabellone */
+#tabellone div{
+    background-color: #3e95af;
+    color: rgb(240, 240, 240);
+    text-align: center;
+    border: 1px solid rgba(255, 255, 255, 0.472);
+    border-radius: 0.3em;
+    margin: 0.1em;
+    padding: 0.5em;
+    width: 1.5em;
+    height: 1.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0.5em 0.5em 2em black;
+}
+/* celle estratte tabellone */
+#tabellone div.selected{
+    background-color: white;
+    color: rgb(33, 38, 38);
+}
+/* btn estrazione n */
+.estrai{
+    display: block;
+    margin: 2em auto;
+    padding: 0.6em 1em;
+    border: none;
+    border-radius: 1em;
+    cursor: pointer;
+    background-color: white;
+    color: rgb(58, 72, 62);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1em;
+    border: 1px solid white;
+}
+.estrai:hover{
+    background-color: #3e95af;
+    color: white;
+}
+.estrai:active{
+    background-color: #317a91;
+}
+.disabledBtn {
+    opacity: 0.7;
+    pointer-events: none;
+    cursor: default;
+    outline: none; 
+    user-select: none; 
+}
+.disabledBtn:focus {
+    outline: none; 
+}
+.disabledBtn:hover {
+    background: inherit; 
+    color: inherit;
+}
+/* ultimo n estratto */
+#randomNum{
+    border: 1px solid white;
+    border-radius: 0.3em;
+    padding: 0.3em;
+    margin: 0 auto;
+    margin-bottom: 1em;
+    width: fit-content;
+    color: white;
+    letter-spacing: 2px;
+}
+#randomNum span{
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+
+/* CARTELLA GIOCATORE*/
+
+/* area cartelle */
+#tabUser{
+    text-align: center;
+    height: 100%;
+    display: inline;
+}
+/* cartella */
+#tabUser table{
+    border-radius: 0.5em;
+    display: inline-block;
+    margin: 1em;
+    padding: 0.5em;
+    background-color: rgb(161, 188, 196);
+    box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.442);
+}
+/* td cartelle */
+.cellaCartella{
+    border-radius: 0.3em;
+    border: 1px solid rgb(133, 169, 181);
+    width: 2em;
+    height: 2em;
+}
+/* td estratte della cartella */
+#tabUser td.selected{
+    background-color: white;
+    width: 2em;
+    height: 2em;
+    border-radius: 0.3em;
+}
+/* intestazione singola cartella */
+.infoCartella th{
+    font-size: 1.3em;
+    font-weight: lighter;
+    padding: 0.2em;
+    border-radius: 0.1em;
+    color: rgb(229, 239, 243);
+    background-color: #3a7d92;
+}
+/* lettera intestazione cartella */
+.true{
+    color: rgb(150, 241, 255);
+    font-weight: bold;
+    text-shadow: 0 0 0.5em rgb(150, 241, 255);
+}
+
+
+/* PUNTI */
+
+/* td di tr col punto */
+.points td{
+    border:1px solid rgb(150, 241, 255) !important;
+}
+/* td che han fatto punto */
+.pointsNum{
+    background-color: rgb(126, 238, 255) !important;
+}
+/* cartella che ha fatto tombola */
+#tombola{
+    border: 2px solid rgb(161, 242, 255);
+    box-shadow: 0 0 1em 0.5em rgba(42, 227, 255, 0.483) !important;
+}
+
+
+
+/* FORM */
+
+#formArea{
+    text-align: center;
+    height: 100%;
+}
+#formArea form{
+    width: fit-content;
+    margin: 0 auto;
+    border: 1px solid white;
+    border-radius: 0.6em;
+    background-color: rgb(161, 188, 196);
+    padding: 1em;
+}
+#formArea form input{
+    width: 10em;
+    height: 1.6em;
+    border-radius: 0.6em;
+    border: none;
+    padding: 0 0.5em;
+    margin: 1em 0;
+}
+#formArea form button{
+    letter-spacing: 0.1em;
+    margin-left: 1em;
+    padding: 0.4em 1em;
+    border: none;
+    border-radius: 0.8em;
+    background-color: rgb(21, 113, 142);
+    color: white;
+    cursor: pointer;
+}
+#formArea form button:hover{
+    background-color: rgb(12, 80, 100);
+}
+#formArea form p{
+    margin: 0;
+}
+#mex{
+    color: rgb(184, 3, 3);
+}
+
+
+/* FOOTER */
+
+footer{
+    margin: 2em;
+    text-align: center;
+}
+footer button{
+    letter-spacing: 0.1em;
+    margin-top: 2em ;
+    padding: 1em;
+    border: none;
+    border-radius: 2em;
+    background-color: rgb(12, 80, 100);
+    color: rgb(21, 113, 142);
+    cursor: pointer;
+}
+footer button:hover{
+    color: rgb(89, 141, 157);
+}
+#infoPoints{
+    border: 1px solid white;
+    border-radius: 0.3em;
+    color: white;
+    text-align: left;
+    width: fit-content;
+    margin: 0 auto;
+    padding: 0 1em;
+}
